@@ -14,7 +14,7 @@ describe('Interactions', function () {
     })
 
 
-    it('display correct number of records', () => {
+    it('Display correct number of records', () => {
         cy.get('.product_pod').its('length').should('eq', 11)
     })
 
