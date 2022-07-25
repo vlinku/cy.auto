@@ -6,15 +6,15 @@ describe('Check price validation of the book', function () {
         cy.url().should('include', 'travel_2/inde')
     })
 
-    it('go to poetry section', () => {
+    it('Go to poetry section', () => {
         cy.get('a').contains('Poetry').click()
         cy.get('h1').contains('Poetry')
     })
-    it('select book olio', () => {
+    it('Select book olio', () => {
         cy.get('a').contains('Olio').click()
         cy.get('h1').contains('Olio')
     })
-    it('check the price value', () => {
+    it('Check the price value', () => {
         cy.get('.price_color').contains('23.88')
     })
 
