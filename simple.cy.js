@@ -8,7 +8,7 @@ describe('Browser actions', () => {
         cy.url().should('include', 'ample.com')
     })
 
-    it('should wiat for 3 seconds', () => {
+    it('should wiats for 3 seconds', () => {
         cy.wait(3000)
     })
 

@@ -4,7 +4,7 @@
 describe('Interactions', function () {
     it('interact with button', function () {
 
-        cy.visit('https://books.toscrape.com/index.html', { timeout: 10000 })
+        cy.visit('https://books.toscrape.com/index.html', { timeout: 20000 })
         cy.url().should('include', 'com/index.html')
 
     })
