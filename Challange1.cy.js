@@ -2,11 +2,11 @@
 
 describe('Check price validation of the book', function () {
     it('inspect existing page', () => {
-        cy.visit('https://books.toscrape.com/catalogue/category/books/travel_2/index.html', { timeout: 10000 })
+        cy.visit('https://books.toscrape.com/catalogue/category/books/travel_2/index.html', { timeout: 20000 })
         cy.url().should('include', 'travel_2/inde')
     })
 
-    it('go to poetry section', () => {
+    it('Go to poetry section', () => {
         cy.get('a').contains('Poetry').click()
         cy.get('h1').contains('Poetry')
     })

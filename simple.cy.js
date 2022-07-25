@@ -2,7 +2,7 @@
 
 describe('Browser actions', () => {
     it('should load correct url', () => {
-        cy.visit('http://example.com/', { timeout: 5000 })
+        cy.visit('http://example.com/', { timeout: 20000 })
     })
     it('should check correct url', () => {
         cy.url().should('include', 'ample.com')
