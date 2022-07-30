@@ -4,6 +4,9 @@ describe('Check price validation of the book', function () {
     it('inspect existing page', () => {
         cy.visit('https://books.toscrape.com/catalogue/category/books/travel_2/index.html', { timeout: 20000 })
         cy.url().should('include', 'travel_2/inde')
+        cy.log('Before Reload')                     // log`s the test
+        cy.reload()                                 // Refresh(Reload`s the page)
+        cy.log('After Reload')
     })
 
     it('Go to poetry section', () => {
