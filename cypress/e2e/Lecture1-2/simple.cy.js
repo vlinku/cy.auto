@@ -1,14 +1,14 @@
 /// <reference types="Cypress" />
 
 describe('Browser actions', () => {
-    it('should load correct url', () => {
+    it('Should load correct url', () => {
         cy.visit('http://example.com/', { timeout: 20000 })
     })
-    it('should check correct url', () => {
+    it('Should check correct url', () => {
         cy.url().should('include', 'ample.com')
     })
 
-    it('should wait for 3 seconds', () => {
+    it('Should wait for 3 seconds', () => {
         cy.wait(3000)
     })
 
@@ -16,7 +16,7 @@ describe('Browser actions', () => {
     // cy.pause()
     // })
 
-    it('should check for correct element on the page', () => {
+    it('Should check for correct element on the page', () => {
         cy.get('h1').should('be.visible')
 
     })

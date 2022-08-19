@@ -10,7 +10,7 @@ describe('Create a New payee test', () => {
         })
     })
 
-    it('should add new payee to the list', () => {
+    it('Should add new payee to the list', () => {
         cy.get('#pay_bills_tab').click()
         cy.contains('Add New Payee').click()
         cy.get('#np_new_payee_name').type('Name')
@@ -20,7 +20,7 @@ describe('Create a New payee test', () => {
         cy.get('#add_new_payee').click()
     })
 
-    it('should show sucess message', () => {
+    it('Should show sucess message', () => {
         cy.get('#alert_content').should('be.visible').and('contain', 'The new payee Name was successfully created.')
     })
 

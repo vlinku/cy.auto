@@ -4,10 +4,10 @@ describe('Feedback Test', () => {
         cy.contains('Feedback').click()
     })
 
-    it('should load feedback form', () => {
+    it('Should load feedback form', () => {
         cy.get('form').should('be.visible')
     })
-    it('should fill feedback form', () => {
+    it('Should fill feedback form', () => {
         cy.get('#name').type('Vilius')
         cy.get('#email').type('Email@test.com')
         cy.get('#subject').type('Hallo World!')
@@ -18,7 +18,7 @@ describe('Feedback Test', () => {
         cy.get('.btn-signin').click()
     })
 
-    it('should display feedback message', () => {
+    it('Should display feedback message', () => {
         cy.get('#feedback-title').contains('Feedback')
     })
 })

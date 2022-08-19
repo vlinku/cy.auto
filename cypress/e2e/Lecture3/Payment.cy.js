@@ -9,7 +9,7 @@ describe('Payment Test', () => {
         })
     })
 
-    it('should send new payment', () => {
+    it('Should send new payment', () => {
         cy.get('#pay_bills_tab').click()
         cy.contains('Pay Saved Payee').click()
         cy.get('#sp_payee').select('wellsfargo')
@@ -20,7 +20,7 @@ describe('Payment Test', () => {
         cy.get('#pay_saved_payees').click()
     })
 
-    it('show success message', () => {
+    it('Should show success message', () => {
         cy.get('#alert_content').should('be.visible').and('contain', 'The payment was successfully submitted')
     })
 

@@ -9,7 +9,7 @@ describe('Transfer fund verification test', () => {
         })
     })
 
-    it('Fill transfer funds form', () => {
+    it('Should fill transfer funds form', () => {
         cy.get('#transfer_funds_tab').click()
         cy.get('#tf_fromAccountId').select('3')
         cy.get('#tf_toAccountId').select('5')
@@ -19,7 +19,7 @@ describe('Transfer fund verification test', () => {
 
     })
 
-    it('Verify correct data', () => {
+    it('Should verify correct data', () => {
         cy.get('#tf_fromAccountId').should('have.value', 'Savings')
         cy.get('#tf_toAccountId').should('have.value', 'Credit Card')
         cy.get('#tf_amount').should('have.value', '2000')
