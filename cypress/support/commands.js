@@ -33,6 +33,4 @@ Cypress.Commands.add('logins', (userName, passWord) => {
     cy.get('#user_password').type(passWord)
     cy.get('#user_remember_me').click()
     cy.contains('Sign in').click()
-
-
 })
